@@ -1,0 +1,100 @@
+@import "compass/reset";
+@import "compass/css3/flexbox";
+@import "compass/css3";
+@import "variables";
+@import "mixins";
+@import "compass/css3/transition";
+
+#img_main{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    img{
+        width: 100%;
+    }
+}
+
+#info_general{
+    @include  div($width:100%,$height:max-content,$bgcolor:rgb(112, 186, 235));
+    @include flex-row-wrap(wrap);
+    padding:10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(164, 245, 207);
+    
+    .texto{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    #img_info_general{
+       width: 40%;
+       @include flex-center-center;
+      img{
+          max-width: 100%;
+      }
+    }
+    
+}
+
+#main_conten{
+    display: flex;
+    flex-flow: row wrap;
+
+    %actividades{
+        @include  div($width:50%,$height:max-content,$bgcolor:rgb(172, 235, 112));
+        box-sizing: border-box;
+        padding:20px 20px;
+       /* border-bottom: solid $color_borde 1.5px;
+        &:nth-child(even){
+                   border-right: solid $color_borde 1.5px;
+                   
+                    }*/
+        
+        }
+      
+    .actividades{
+
+                @extend %actividades;
+            
+        }
+
+        @for $i from 1 through 4{
+            .actividades-#{$i}{
+                border-bottom: solid $color_borde 1.5px;
+            }
+            @if ($i%2==0) {
+                 .actividades-#{$i}{
+            border-left: solid $color_borde 1.5px;
+              }
+                    
+            }
+         
+        }
+
+        #boton{
+            background-color:blue;
+            border-radius: 10px;
+        }
+
+        @for $i from 1 through 3 {
+            .div-#{$i}{
+                width: 25px * $i;
+                height: 25px * $i;
+                border-radius: 50%;
+                background-color: blue;
+                @include inline-block;
+            }
+            
+        }
+
+        .prueba{width: 100%; height: 50px;background-color: yellowgreen;}
+        
+   }
+
+
+    
+
+
+

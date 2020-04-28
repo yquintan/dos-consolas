@@ -1,0 +1,31 @@
+
+@mixin div($width:0px,$height:0px,$bgcolor:white) {
+
+    width: $width;
+    height: $height;
+    background-color:$bgcolor;
+    
+}
+
+@mixin flex-center-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+}
+
+@mixin flex-row-wrap($wrap:wrap){
+    display: flex;
+    flex-flow: row $wrap; 
+    
+}
+
+@mixin a-link-color($hover,$visited) {
+    &:hover{
+        color:$hover;
+         }
+        &:visited{
+            color:$visited;
+        }
+    
+}

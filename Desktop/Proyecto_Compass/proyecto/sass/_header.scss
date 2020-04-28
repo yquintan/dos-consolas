@@ -1,0 +1,68 @@
+@import "compass/reset";
+@import "compass/css3/flexbox";
+@import "variables";
+@import "mixins";
+@import "compass/css3/transition";
+
+
+#header_img{
+    height: max-content;
+    @include flex-center-center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: brown;
+    
+    img{
+       
+        max-width: 100%;
+        
+    }
+  }
+
+  
+  nav{
+      width: 100%;
+      height: max-content;
+      background-color: $color_fondo_nav;
+      @include flex-center-center;
+      border-top: solid 1.5px $color_borde;
+      border-bottom: solid 1.5px $color_borde;
+      
+      ul{
+
+        width: 20%;
+        @include flex-center-center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        li{
+            /*padding-top: 11px;
+            padding-bottom: 11px;*/
+            line-height: 40px;
+            
+            a{
+                text-decoration: none;
+                
+                  @include a-link-color(rgb(0, 174, 255),rgb(25, 0, 255));
+              
+            }
+            
+             &:hover{
+                 
+                 background-color:rgba(0, 153, 255, 0.3);
+                                
+             }
+                   
+        }
+        
+        @media(max-width:400px) {
+         display:flex;
+         flex-flow: column;
+        
+        }
+            
+      }
+          
+  }
+

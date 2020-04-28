@@ -1,0 +1,264 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/_header.scss */
+#header_img {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: brown;
+}
+/* line 16, ../sass/_header.scss */
+#header_img img {
+  max-width: 100%;
+}
+
+/* line 24, ../sass/_header.scss */
+nav {
+  width: 100%;
+  height: max-content;
+  background-color: #f3f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1.5px #e6e6e6;
+  border-bottom: solid 1.5px #e6e6e6;
+}
+/* line 32, ../sass/_header.scss */
+nav ul {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/* line 39, ../sass/_header.scss */
+nav ul li {
+  /*padding-top: 11px;
+  padding-bottom: 11px;*/
+  line-height: 40px;
+}
+/* line 44, ../sass/_header.scss */
+nav ul li a {
+  text-decoration: none;
+}
+/* line 24, ../sass/_mixins.scss */
+nav ul li a:hover {
+  color: #00aeff;
+}
+/* line 27, ../sass/_mixins.scss */
+nav ul li a:visited {
+  color: #1900ff;
+}
+/* line 51, ../sass/_header.scss */
+nav ul li:hover {
+  background-color: rgba(0, 153, 255, 0.3);
+}
+@media (max-width: 400px) {
+  /* line 32, ../sass/_header.scss */
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+/* line 8, ../sass/_main.scss */
+#img_main {
+  width: max-content;
+  height: max-content;
+  margin: auto;
+}
+/* line 12, ../sass/_main.scss */
+#img_main img {
+  width: 100%;
+}
+
+/* line 17, ../sass/_main.scss */
+#info_general {
+  width: 100%;
+  height: max-content;
+  background-color: #70baeb;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #a4f5cf;
+}
+/* line 24, ../sass/_main.scss */
+#info_general .texto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 31, ../sass/_main.scss */
+#info_general #img_info_general {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 34, ../sass/_main.scss */
+#info_general #img_info_general img {
+  max-width: 100%;
+}
+
+/* line 41, ../sass/_main.scss */
+#main_conten {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* line 45, ../sass/_main.scss */
+#main_conten .actividades {
+  width: 50%;
+  height: max-content;
+  background-color: #aceb70;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  /* border-bottom: solid $color_borde 1.5px;
+   &:nth-child(even){
+              border-right: solid $color_borde 1.5px;
+              
+               }*/
+}
+/* line 64, ../sass/_main.scss */
+#main_conten .actividades-1 {
+  border-bottom: solid #e6e6e6 1.5px;
+}
+/* line 64, ../sass/_main.scss */
+#main_conten .actividades-2 {
+  border-bottom: solid #e6e6e6 1.5px;
+}
+/* line 68, ../sass/_main.scss */
+#main_conten .actividades-2 {
+  border-left: solid #e6e6e6 1.5px;
+}
+/* line 64, ../sass/_main.scss */
+#main_conten .actividades-3 {
+  border-bottom: solid #e6e6e6 1.5px;
+}
+/* line 64, ../sass/_main.scss */
+#main_conten .actividades-4 {
+  border-bottom: solid #e6e6e6 1.5px;
+}
+/* line 68, ../sass/_main.scss */
+#main_conten .actividades-4 {
+  border-left: solid #e6e6e6 1.5px;
+}
+/* line 76, ../sass/_main.scss */
+#main_conten #boton {
+  background-color: blue;
+  border-radius: 10px;
+}
+/* line 82, ../sass/_main.scss */
+#main_conten .div-1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 82, ../sass/_main.scss */
+#main_conten .div-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 82, ../sass/_main.scss */
+#main_conten .div-3 {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 92, ../sass/_main.scss */
+#main_conten .prueba {
+  width: 100%;
+  height: 50px;
+  background-color: yellowgreen;
+}
