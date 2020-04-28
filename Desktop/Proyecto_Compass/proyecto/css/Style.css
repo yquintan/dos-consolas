@@ -74,9 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: brown;
+ 
 }
 /* line 16, ../sass/_header.scss */
 #header_img img {
